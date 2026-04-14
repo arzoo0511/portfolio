@@ -7,13 +7,13 @@ import { SectionType } from '../App';
 // --- SUB-COMPONENTS FOR EACH SECTION ---
 
 const JourneySection = () => (
-  <div className="space-y-12 text-left p-12 bg-gradient-to-b from-amber-950/40 to-black/80 border-t border-amber-500/20 rounded-3xl backdrop-blur-md relative overflow-hidden font-serif">
+  <div className="space-y-8 lg:space-y-12 text-left p-6 lg:p-12 bg-gradient-to-b from-amber-950/40 to-black/80 border-t border-amber-500/20 rounded-3xl backdrop-blur-md relative overflow-hidden font-serif">
     {/* Floating Dust / Magical Particles Overlay */}
     <div className="absolute inset-0 opacity-10 mix-blend-color-dodge bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] pointer-events-none" />
     <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 blur-[100px] pointer-events-none" />
 
-    <h3 className="text-4xl text-amber-500 mb-8 tracking-widest border-b border-amber-500/30 pb-4 inline-flex items-center gap-4">
-      <Compass className="w-8 h-8 opacity-70" /> Path of the Architect
+    <h3 className="text-2xl md:text-3xl lg:text-4xl text-amber-500 mb-6 lg:mb-8 tracking-widest border-b border-amber-500/30 pb-4 inline-flex items-center gap-4">
+      <Compass className="w-6 h-6 lg:w-8 lg:h-8 opacity-70" /> Path of the Architect
     </h3>
 
     <div className="relative border-l-2 border-amber-500/30 ml-4 pl-10 space-y-16">
@@ -22,11 +22,11 @@ const JourneySection = () => (
         <div className="absolute -left-[49px] bg-amber-950 border border-amber-500/50 rounded-full p-2 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.3)] group-hover:bg-amber-500 transition-colors">
           <BookOpen className="w-4 h-4 text-amber-500 group-hover:text-black transition-colors" />
         </div>
-        <div className="p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
+        <div className="p-5 lg:p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500 blur" />
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2 relative z-10">
             <div>
-              <h3 className="text-2xl font-bold tracking-wider text-amber-100 font-sans">Bachelor of Science in Computer Science Engineering</h3>
+              <h3 className="text-xl lg:text-2xl font-bold tracking-wider text-amber-100 font-sans">Bachelor of Science in Computer Science Engineering</h3>
               <p className="text-amber-500/80 font-mono text-sm uppercase mt-1">Bennett University (Times of India Group)</p>
             </div>
             <div className="flex items-center gap-2 text-amber-200/50 font-mono text-xs uppercase bg-amber-950/50 border border-amber-500/20 px-3 py-1 rounded-full w-fit">
@@ -42,11 +42,11 @@ const JourneySection = () => (
         <div className="absolute -left-[49px] bg-amber-950 border border-amber-500/50 rounded-full p-2 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.3)] group-hover:bg-amber-500 transition-colors">
           <Zap className="w-4 h-4 text-orange-400 group-hover:text-black transition-colors" />
         </div>
-        <div className="p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
+        <div className="p-5 lg:p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500 blur" />
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2 relative z-10">
             <div>
-              <h3 className="text-2xl font-bold tracking-wider text-amber-100 font-sans">Mentor | GirlScript Summer of Code</h3>
+              <h3 className="text-xl lg:text-2xl font-bold tracking-wider text-amber-100 font-sans">Mentor | GirlScript Summer of Code</h3>
               <p className="text-orange-400/80 font-mono text-xs uppercase mt-1">Python • PyTorch • Hugging Face Transformers • Git</p>
             </div>
             <div className="flex items-center gap-2 text-amber-200/50 font-mono text-xs uppercase bg-amber-950/50 border border-amber-500/20 px-3 py-1 rounded-full w-fit">
@@ -66,11 +66,11 @@ const JourneySection = () => (
         <div className="absolute -left-[49px] bg-amber-950 border border-amber-500/50 rounded-full p-2 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.3)] group-hover:bg-amber-500 transition-colors">
           <Cpu className="w-4 h-4 text-yellow-400 group-hover:text-black transition-colors" />
         </div>
-        <div className="p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
+        <div className="p-5 lg:p-8 bg-amber-900/10 border border-amber-500/20 rounded-2xl hover:bg-amber-900/20 transition-all backdrop-blur-md relative">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-2xl opacity-0 group-hover:opacity-10 transition duration-500 blur" />
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2 relative z-10">
             <div>
-              <h3 className="text-2xl font-bold tracking-wider text-amber-100 font-sans">AI Tech Intern | Univest</h3>
+              <h3 className="text-xl lg:text-2xl font-bold tracking-wider text-amber-100 font-sans">AI Tech Intern | Univest</h3>
               <p className="text-yellow-400/80 font-mono text-xs uppercase mt-1">Python • Hugging Face • PostgreSQL • LangChain • React</p>
             </div>
             <div className="flex items-center gap-2 text-amber-200/50 font-mono text-xs uppercase flex-col sm:flex-row sm:bg-amber-950/50 sm:border sm:border-amber-500/20 sm:px-3 sm:py-1 rounded-full w-fit">
@@ -100,12 +100,12 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="p-10 bg-[#0a0f1c]/90 border border-blue-500/20 rounded-[2rem] shadow-[inset_0_0_80px_rgba(37,99,235,0.1)] relative overflow-hidden font-sans">
+    <div className="p-6 md:p-10 bg-[#0a0f1c]/90 border border-blue-500/20 rounded-[2rem] shadow-[inset_0_0_80px_rgba(37,99,235,0.1)] relative overflow-hidden font-sans">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_70%)] pointer-events-none" />
 
-      <h3 className="text-3xl text-blue-400 tracking-[0.3em] uppercase mb-12 text-center font-bold flex flex-col items-center gap-4">
-        <Cpu className="w-12 h-12 opacity-80" /> Tech Stack
+      <h3 className="text-2xl md:text-3xl text-blue-400 tracking-[0.3em] uppercase mb-12 text-center font-bold flex flex-col items-center gap-4">
+        <Cpu className="w-8 h-8 md:w-12 md:h-12 opacity-80" /> Tech Stack
       </h3>
 
       <div className="grid md:grid-cols-2 gap-6 text-left relative z-10">
@@ -162,13 +162,13 @@ const LabSection = () => {
   ];
 
   return (
-    <div className="p-10 bg-[#051111]/90 border border-emerald-500/20 rounded-[3rem] relative overflow-hidden font-sans shadow-[0_0_50px_rgba(16,185,129,0.05)_inset]">
+    <div className="p-6 md:p-10 bg-[#051111]/90 border border-emerald-500/20 rounded-[3rem] relative overflow-hidden font-sans shadow-[0_0_50px_rgba(16,185,129,0.05)_inset]">
       
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none" />
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.05)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-      <h3 className="text-3xl text-emerald-400 tracking-[0.3em] mb-12 text-center uppercase font-bold">
+      <h3 className="text-2xl md:text-3xl text-emerald-400 tracking-[0.3em] mb-8 md:mb-12 text-center uppercase font-bold">
         Project Workbench
       </h3>
 
@@ -176,11 +176,11 @@ const LabSection = () => {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="p-8 bg-emerald-950/20 border-t border-emerald-500/30 rounded-2xl hover:bg-emerald-900/40 transition-all group backdrop-blur-md flex flex-col h-full shadow-[0_-5px_20px_rgba(16,185,129,0.05)]"
+            className="p-6 lg:p-8 bg-emerald-950/20 border-t border-emerald-500/30 rounded-2xl hover:bg-emerald-900/40 transition-all group backdrop-blur-md flex flex-col h-full shadow-[0_-5px_20px_rgba(16,185,129,0.05)]"
           >
             <div className="flex justify-between items-start mb-4">
               
-              <h3 className="text-3xl font-bold tracking-tight text-white group-hover:text-emerald-300 transition-colors">
+              <h3 className="text-xl md:text-3xl font-bold tracking-tight text-white group-hover:text-emerald-300 transition-colors">
                 {project.title}
               </h3>
 
@@ -217,7 +217,7 @@ const KnowledgeSection = () => (
   <div className="text-left font-serif max-w-4xl mx-auto space-y-12">
     
     {/* Achievements Scroll */}
-    <div className="p-10 bg-[#140a11]/90 border border-rose-900/50 rounded-sm relative overflow-hidden shadow-2xl">
+    <div className="p-6 md:p-10 bg-[#140a11]/90 border border-rose-900/50 rounded-sm relative overflow-hidden shadow-2xl">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/parchment.png')] opacity-20 mix-blend-overlay pointer-events-none" />
       
       {/* Scroll borders */}
@@ -226,8 +226,8 @@ const KnowledgeSection = () => (
       <div className="absolute left-0 top-0 h-full w-2 bg-gradient-to-r from-rose-900/60 to-transparent" />
       <div className="absolute right-0 top-0 h-full w-2 bg-gradient-to-l from-rose-900/60 to-transparent" />
 
-      <h3 className="text-3xl text-rose-300 mb-8 tracking-widest border-b border-rose-900/50 pb-4 flex items-center gap-4 italic font-bold">
-        <Award className="w-8 h-8 opacity-70" /> Achievements
+      <h3 className="text-2xl md:text-3xl text-rose-300 mb-8 tracking-widest border-b border-rose-900/50 pb-4 flex items-center gap-4 italic font-bold">
+        <Award className="w-6 h-6 md:w-8 md:h-8 opacity-70" /> Achievements
       </h3>
       
       <ul className="text-rose-100/70 space-y-6 relative z-10 text-lg">
@@ -255,11 +255,11 @@ const KnowledgeSection = () => (
     </div>
 
     {/* Positions Book */}
-    <div className="p-10 bg-[#1f1118]/90 border border-fuchsia-900/40 rounded-sm relative overflow-hidden shadow-2xl">
+    <div className="p-6 md:p-10 bg-[#1f1118]/90 border border-fuchsia-900/40 rounded-sm relative overflow-hidden shadow-2xl">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/leather.png')] opacity-10 mix-blend-overlay pointer-events-none" />
       
-      <h3 className="text-3xl font-bold text-fuchsia-300 mb-8 tracking-widest border-b border-fuchsia-900/50 pb-4 flex items-center gap-4 italic">
-        <BookOpen className="w-8 h-8 opacity-70" /> Leadership Roles
+      <h3 className="text-2xl md:text-3xl font-bold text-fuchsia-300 mb-8 tracking-widest border-b border-fuchsia-900/50 pb-4 flex items-center gap-4 italic">
+        <BookOpen className="w-6 h-6 md:w-8 md:h-8 opacity-70" /> Leadership Roles
       </h3>
       
       <div className="space-y-10 relative z-10">
@@ -292,8 +292,8 @@ const KnowledgeSection = () => (
 );
 
 const PortalSection = () => (
-  <div className="flex flex-col items-center justify-center space-y-8 mt-8">
-    <div className="p-10 bg-[#1a0b2e]/80 border-4 border-[#3d1c63] rounded-lg shadow-[inset_0_0_50px_rgba(0,0,0,0.8),0_0_20px_rgba(147,51,234,0.3)] max-w-xl w-full text-center relative overflow-hidden font-serif">
+  <div className="flex flex-col items-center justify-center space-y-8 mt-8 w-full px-4">
+    <div className="p-6 md:p-10 bg-[#1a0b2e]/80 border-4 border-[#3d1c63] rounded-lg shadow-[inset_0_0_50px_rgba(0,0,0,0.8),0_0_20px_rgba(147,51,234,0.3)] max-w-xl w-full text-center relative overflow-hidden font-serif">
       {/* Vintage Texture Overlay */}
       <div className="absolute inset-0 opacity-10 mix-blend-overlay bg-[url('https://www.transparenttextures.com/patterns/aged-paper.png')] pointer-events-none" />
       
@@ -303,8 +303,8 @@ const PortalSection = () => (
       <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-purple-500/50" />
       <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-purple-500/50" />
 
-      <h3 className="text-4xl text-[#d4b483] mb-2 tracking-wider border-b-2 border-purple-900/50 pb-4 inline-block flex items-center gap-3">
-        <Mail className="w-8 h-8 opacity-70" /> Directory
+      <h3 className="text-2xl md:text-4xl text-[#d4b483] mb-2 tracking-wider border-b-2 border-purple-900/50 pb-4 inline-block flex items-center justify-center gap-3">
+        <Mail className="w-6 h-6 md:w-8 md:h-8 opacity-70" /> Directory
       </h3>
       
       <p className="text-purple-300/60 text-sm mb-10 italic mt-4">
@@ -403,8 +403,8 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-6 py-20">
-      <div className="p-8 md:p-12 bg-black/60 border border-orange-500/20 rounded-3xl shadow-[0_0_80px_rgba(249,115,22,0.1)] relative overflow-hidden backdrop-blur-xl font-mono">
+    <section className="w-full max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-20">
+      <div className="p-6 md:p-8 lg:p-12 bg-black/60 border border-orange-500/20 rounded-3xl shadow-[0_0_80px_rgba(249,115,22,0.1)] relative overflow-hidden backdrop-blur-xl font-mono">
         
         {/* Terminal Header */}
         <div className="flex items-center gap-3 border-b border-orange-500/20 pb-6 mb-10">
@@ -440,7 +440,7 @@ const BlogSection = () => {
               >
                 <div className="absolute left-[-4px] top-2 w-2 h-2 bg-black border border-orange-500 rounded-full group-hover:bg-orange-500 transition-all shadow-[0_0_10px_rgba(249,115,22,0)] group-hover:shadow-[0_0_15px_rgba(249,115,22,1)]" />
 
-                <h4 className="text-2xl text-orange-100 font-bold mb-2 group-hover:text-orange-400 transition-colors">
+                <h4 className="text-xl lg:text-2xl text-orange-100 font-bold mb-2 group-hover:text-orange-400 transition-colors">
                   {post.title}
                 </h4>
 
@@ -535,7 +535,7 @@ const ActivitiesSection = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto space-y-12 text-left font-sans">
-      <div className="p-8 md:p-12 bg-cyan-950/20 border border-cyan-500/20 rounded-[3rem] shadow-[0_0_100px_rgba(6,182,212,0.1)_inset] relative overflow-hidden backdrop-blur-2xl">
+      <div className="p-6 md:p-8 lg:p-12 bg-cyan-950/20 border border-cyan-500/20 rounded-[3rem] shadow-[0_0_100px_rgba(6,182,212,0.1)_inset] relative overflow-hidden backdrop-blur-2xl">
         
         {/* Abstract Network Background */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
@@ -584,9 +584,9 @@ const ResearchSection = () => {
 
   return (
     <div className="w-full max-w-5xl mx-auto space-y-8 text-left font-serif">
-      <div className="flex items-center gap-4 mb-12">
+      <div className="flex items-center gap-4 mb-8 md:mb-12">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent to-rose-500/50" />
-        <h3 className="text-3xl font-heading tracking-[0.3em] uppercase text-rose-300">
+        <h3 className="text-xl md:text-3xl font-heading tracking-[0.3em] uppercase text-rose-300 text-center">
            Research & Publications
         </h3>
         <div className="h-px flex-1 bg-gradient-to-l from-transparent to-rose-500/50" />
@@ -594,11 +594,11 @@ const ResearchSection = () => {
 
       <div className="flex flex-col gap-8">
         {papers.map((paper, idx) => (
-           <div key={idx} className="group relative p-8 md:p-10 bg-black/40 border border-rose-900/50 hover:border-rose-400 rounded-3xl transition-all duration-500 backdrop-blur-xl overflow-hidden hover:shadow-[0_0_50px_rgba(244,63,94,0.15)] flex flex-col items-start gap-4">
+           <div key={idx} className="group relative p-6 md:p-8 lg:p-10 bg-black/40 border border-rose-900/50 hover:border-rose-400 rounded-3xl transition-all duration-500 backdrop-blur-xl overflow-hidden hover:shadow-[0_0_50px_rgba(244,63,94,0.15)] flex flex-col items-start gap-4">
               <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/5 blur-[100px] group-hover:bg-rose-500/20 transition-colors pointer-events-none" />
               
-              <div className="flex self-stretch justify-between items-start mb-2 relative z-10 w-full">
-                 <h4 className="text-2xl md:text-3xl font-bold text-white group-hover:text-rose-300 transition-colors max-w-3xl leading-snug font-sans">
+              <div className="flex self-stretch justify-between items-start mb-2 relative z-10 w-full gap-4">
+                 <h4 className="text-xl lg:text-3xl font-bold text-white group-hover:text-rose-300 transition-colors max-w-3xl leading-snug font-sans">
                    {paper.title}
                  </h4>
                  {paper.link && (

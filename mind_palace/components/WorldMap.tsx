@@ -216,7 +216,10 @@ export const WorldMap: React.FC<{
                 sm:w-32 sm:h-52
                 md:w-40 md:h-64
                 lg:w-52 lg:h-80
-                rounded-2xl border border-white/20 bg-white/5"
+                rounded-2xl border border-white/20 bg-white/5 
+                flex items-center justify-center text-center
+                text-sm md:text-base font-bold tracking-widest text-white/80 
+                hover:text-white hover:bg-white/10 transition-all uppercase"
               >
                 {door.label}
               </button>
