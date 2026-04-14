@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ChevronLeft, LogIn } from 'lucide-react';
+import { ChevronRight, ChevronLeft, LogIn, Smartphone } from 'lucide-react';
 import { SectionType } from '../App';
 import bgImage from '../mind_palace_bg.png';
 
@@ -134,8 +134,24 @@ export const WorldMap: React.FC<{
 
   return (
     <div className="relative w-full h-[100dvh] flex items-center justify-center bg-black overflow-hidden">
+      
+      {/* PORTRAIT OVERLAY FOR MOBILE */}
+      <div className="absolute inset-0 z-[999] hidden portrait:flex md:portrait:hidden flex-col items-center justify-center bg-black/98 backdrop-blur-3xl text-center px-6">
+        <motion.div 
+          animate={{ rotate: 90 }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", repeatDelay: 1 }}
+          className="w-24 h-24 border border-amber-500/30 rounded-3xl flex items-center justify-center mb-8 bg-amber-950/20 shadow-[0_0_30px_rgba(245,158,11,0.1)]"
+        >
+          <Smartphone className="w-10 h-10 text-amber-500" />
+        </motion.div>
+        <h2 className="text-2xl font-bold tracking-[0.2em] text-amber-100 mb-4 font-heading uppercase text-center">Rotate Device</h2>
+        <p className="text-amber-100/60 font-sans text-sm max-w-xs leading-relaxed text-center">
+          The Mind Palace requires a landscape view. Please rotate your phone sideways to continue.
+        </p>
+      </div>
+
       <div 
-        className="relative w-full aspect-video"
+        className="relative w-full aspect-video portrait:hidden md:portrait:block"
         style={{
           maxHeight: '100dvh',
           maxWidth: 'calc(100dvh * 16 / 9)'
