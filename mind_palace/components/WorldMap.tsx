@@ -133,12 +133,18 @@ export const WorldMap: React.FC<{
   const currentTourGate = doors[tourIndex];
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center bg-black overflow-hidden">
-      <div className="relative w-full h-full max-h-screen aspect-video">
+    <div className="relative w-full h-[100dvh] flex items-center justify-center bg-black overflow-hidden">
+      <div 
+        className="relative w-full aspect-video"
+        style={{
+          maxHeight: '100dvh',
+          maxWidth: 'calc(100dvh * 16 / 9)'
+        }}
+      >
         <img
           src={typeof bgImage === 'string' ? bgImage : (bgImage as any).src}
           alt="Mind Palace"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
 
         {(mapState === 'overview' || mapState === 'exploring') && (
@@ -187,7 +193,7 @@ export const WorldMap: React.FC<{
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50"
+          className="absolute bottom-20 md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-auto"
         >
           <div className="bg-black/40 backdrop-blur-xl px-5 sm:px-8 py-3 sm:py-4 rounded-2xl border border-white/10 shadow-2xl flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
